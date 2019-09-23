@@ -10,16 +10,15 @@ Begin
 
 	If (A < B+C) and (B < A+C) and (C < A+B) then
 	Begin
-	 		Write ('… um tri‚ngulo do tipo ');
+	 		Write ('√â um tri√¢ngulo do tipo ');
 		If (A=B) and (B=C) and (C=A) then
-	 		Write('Equil·tero')
-    else
-		If (A<>B+C) and (B<>A+C) and (C<>B+A) then 
-	 		Write ('IsÛsceles')
+	 		Write('Equil√°tero')
     else
 		If (A<>C) and (A<>B) and (C<>B)then
-			Write ('Escaleno');
+			Write ('Escaleno')
+    else			
+			Write ('Is√≥sceles')
 	End
 	Else
-	 	Write ('N„o È um tri‚ngulo');
+	 	Write ('N√£o √© um tri√¢ngulo');
 End.
