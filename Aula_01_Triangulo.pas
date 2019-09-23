@@ -17,7 +17,7 @@ Begin
 		If (A<>C) and (A<>B) and (C<>B)then
 			Write ('Escaleno')
     else			
-			Write ('Isósceles')
+			Write ('Isósceles');
 	End
 	Else
 	 	Write ('Não é um triângulo');
