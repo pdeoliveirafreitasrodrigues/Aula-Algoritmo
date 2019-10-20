@@ -15,7 +15,7 @@ Begin
         feminino := feminino + 1;    
     End;
 
-    writeln('Sim ou n„o');
+    writeln('Sim ou n√£o');
     read(aux);
    
     begin
@@ -25,7 +25,7 @@ Begin
 
 End;	
   writeln('Total de votos SIM: ' ,totalsim);
-  writeln('Total de votos N√O: ' ,10-totalsim);	
+  writeln('Total de votos N√ÉO: ' ,10-totalsim);	
 	writeln('Percentual Masculino: ' ,(10-feminino)*100/10 );
   writeln('Percentual Feminino: ' , feminino*100/10 );
   ReadKey; 
