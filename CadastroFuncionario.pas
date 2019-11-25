@@ -3,56 +3,56 @@ uses crt;
 
 Var 
 		Resposta : String;
-		ListaNomes : array[1..10] of string;
-		ListaIdade : array[1..10] of integer;
-		ListaAltura : array[1..10] of Real;			
+		ListaNomes : array[1..8] of string;
+		ListaIdade : array[1..8] of integer;
+		ListaAltura : array[1..8] of Real;			
 		Ind, IDADE : integer;
 		
-	Procedure Consulta;	
-		Begin 	  	
-       
-			IDADE := 0;
-			
-			For Ind := 1 to 10 do	
-  		IF (IDADE < ListaIdade[Ind]) Then
-	  		Begin
-					clrscr;
-					
-					Writeln('---------------------------');
-  				Writeln('  Funcionário mais velho!  ');
-  				Writeln('---------------------------');
-  				WriteLn;   				
-	  			Writeln ('Nome: ', ListaNomes[Ind]);
-	  			Writeln ('Idade: ', ListaIdade[Ind]);
-	  			Writeln ('Altura: ', ListaAltura[Ind]);
-    		End; 			
+Procedure Consulta;	
+			Begin 	  	
+	       
+				IDADE := 0;
 				
-				ReadKey;
-				         
- 		End;	
+				For Ind := 1 to 10 do	
+	  		IF (IDADE < ListaIdade[Ind]) Then
+		  		Begin
+		  		
+		  			IDADE := ListaIdade[Ind];
+		  			
+						clrscr;
+						
+						Writeln('---------------------------');
+	  				Writeln('  FuncionÃ¡rio mais velho!  ');
+	  				Writeln('---------------------------');
+	  				WriteLn;   				
+		  			Writeln ('Nome: ', ListaNomes[Ind]);
+		  			Writeln ('Idade: ', ListaIdade[Ind]);
+		  			Writeln ('Altura: ', ListaAltura[Ind]);
+	    		End; 				         
+	 		End;	
 		
 Begin
   ind:=1;
   
   Writeln('----------------------------');
-  Writeln('  Cadastro De Funcionários  ');
+  Writeln('  Cadastro De FuncionÃ¡rios  ');
   Writeln('----------------------------');
   
 Repeat
   
 	Begin	
-	Writeln('Informe o nome do Funcionário: ');
+	Writeln('Nome: ');
 		 Read(ListaNomes[Ind]);
-  Writeln('Informe a idade do funcionário: ');
+  Writeln('Idade: ');
 		 Read(ListaIdade[Ind]);
-	Writeln('Informe a Altura do funcionário: (Digite com ponto)');
+	Writeln('Altura: ');
 		 Read(ListaAltura[Ind]);
   
 	End;
 		                     
 clrscr;
 	
-	Writeln('Novo Funcionário ? [S/N]');
+	Writeln('Novo FuncionÃ¡rio ? [S/N]');
 		Read(Resposta);
 		
 	 ind:=ind+1;                
